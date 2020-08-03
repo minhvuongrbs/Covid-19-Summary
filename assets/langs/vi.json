@@ -1,0 +1,17 @@
+{
+  "app_name": "Tổng hợp Covid",
+  "who_coronavirus_disease": "Tổng hợp dịch Coronavirus (COVID-19)",
+  "confirmed": "Xác nhận nhiễm",
+  "dead": "Tử vong",
+  "recover": "Đã bình phục",
+  "new_cases": "Ca nhiễm mới",
+  "total_cases": "Tổng số ca",
+  "last_updated": "Cập nhật",
+  "english": "English",
+  "vietnamese": "Tiếng Việt",
+  "statistic": "Thống kê",
+  "country": "Quốc gia",
+  "get_started": "Bắt đầu",
+  "covid_19": "Covid-19",
+  "splash_banner_slogan": "You protect your self and help prevent spreading the virus to others it you."
+}

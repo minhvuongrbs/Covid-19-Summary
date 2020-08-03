@@ -1,0 +1,17 @@
+{
+  "app_name": "Covid Summary",
+  "who_coronavirus_disease": "Coronavirus Disease(COVID-19) dashboard",
+  "confirmed": "Confirmed",
+  "dead": "Dead",
+  "recover": "Recover",
+  "new_cases": "New Cases",
+  "total_cases": "Total Cases",
+  "last_updated": "Last updated",
+  "english": "English",
+  "vietnamese": "Tiếng Việt",
+  "statistic": "Statistic",
+  "country": "Country",
+  "get_started": "Get started",
+  "covid_19": "Covid-19",
+  "splash_banner_slogan": "You protect your self and help prevent spreading the virus to others it you."
+}
