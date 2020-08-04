@@ -15,9 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration.zero, () {
-      bloc.fetchSummaryInfo();
-    });
+    bloc.fetchSummaryInfo();
 
     Future.delayed(Duration(milliseconds: 1200), () {
       Navigator.push(context, MaterialPageRoute(builder: (_) => HomeScreen()));

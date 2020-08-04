@@ -19,6 +19,8 @@ class HomeScreen extends StatelessWidget {
         child: StreamBuilder(
           stream: bloc.summaryInfo,
           builder: (context, AsyncSnapshot<Summary> snapshot) {
+            if (snapshot.hasError) return Text(snapshot.error.toString());
+
             return ListView(
               children: [
                 _buildCategories(snapshot.data),
@@ -58,6 +60,10 @@ class HomeScreen extends StatelessWidget {
     String _convertedUpdateTime;
     if (summary == null) {
       _convertedUpdateTime = '';
+      return Container(
+        padding: EdgeInsets.all(10),
+        child: Center(child: CircularProgressIndicator()),
+      );
     } else {
       DateTime _updatedTime = DateTime.parse(summary.date).toLocal();
       _convertedUpdateTime =
