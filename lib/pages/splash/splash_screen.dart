@@ -11,11 +11,15 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  Image stayHomeImage;
   @override
   void initState() {
     super.initState();
-    bloc.fetchSummaryInfo();
-    Future.delayed(Duration(milliseconds: 500), () {
+    Future.delayed(Duration.zero, () {
+      bloc.fetchSummaryInfo();
+    });
+
+    Future.delayed(Duration(milliseconds: 1200), () {
       Navigator.push(context, MaterialPageRoute(builder: (_) => HomeScreen()));
     });
   }
@@ -33,7 +37,10 @@ class _SplashScreenState extends State<SplashScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(height: 15),
-            Image.asset(AppConstant.manWithLaptopImage),
+            Image.asset(
+              AppConstant.manWithLaptopImage,
+              height: MediaQuery.of(context).size.height / 2,
+            ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [

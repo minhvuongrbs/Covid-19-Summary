@@ -37,6 +37,7 @@ class CovidLineChart extends StatelessWidget {
         padding: EdgeInsets.only(right: 25, left: 10),
         child: LineChart(
           LineChartData(
+            lineTouchData: LineTouchData(enabled: false),
             gridData: FlGridData(show: true),
             titlesData: FlTitlesData(
               bottomTitles: SideTitles(

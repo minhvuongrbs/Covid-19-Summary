@@ -1,4 +1,3 @@
-import 'package:covid_summary/pages/home/home_screen.dart';
 import 'package:covid_summary/pages/splash/splash_screen.dart';
 import 'package:covid_summary/utils/translations.dart';
 import 'package:flutter/material.dart';

@@ -9,6 +9,7 @@ class SummaryApiRepository {
         Summary summary = Summary.fromJson(response.data);
         return summary;
       }
+      return null;
     } catch (e) {
       throw Exception('Fail to get summary info');
     }
