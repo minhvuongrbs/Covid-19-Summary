@@ -5,5 +5,5 @@ Covid Summary is a Flutter challenge project for building a screen/page to summa
 ## Description
 - Running on: Android/IOS/Web
 - [Api](https://covid19api.com/)
-
+- ![](summary.gif)
 
