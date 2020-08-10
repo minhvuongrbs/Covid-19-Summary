@@ -1,8 +1,8 @@
+import 'package:covid_summary/app_constant.dart';
 import 'package:covid_summary/blocs/summary_bloc.dart';
 import 'package:covid_summary/components/category_box.dart';
-import 'package:covid_summary/pages/home/covid_line_chart.dart';
-import 'package:covid_summary/app_constant.dart';
 import 'package:covid_summary/models/summary.dart';
+import 'package:covid_summary/pages/home/covid_line_chart.dart';
 import 'package:covid_summary/pages/home/top_cases_table.dart';
 import 'package:covid_summary/utils/translations.dart';
 import 'package:flutter/material.dart';
@@ -47,10 +47,10 @@ class HomeScreen extends StatelessWidget {
       actions: [
         IconButton(
           icon: Icon(
-            Icons.notifications,
+            Icons.refresh,
             color: Colors.grey[300],
           ),
-          onPressed: null,
+          onPressed: () => bloc.fetchSummaryInfo(),
         )
       ],
     );

@@ -9,6 +9,7 @@ class SummaryBloc {
   Stream<Summary> get summaryInfo => _summaryFetcher.stream;
 
   fetchSummaryInfo() async {
+    _summaryFetcher.sink.add(null);
     Summary summary = await _repository.fetchSummaryInfo();
     _summaryFetcher.sink.add(summary);
   }
